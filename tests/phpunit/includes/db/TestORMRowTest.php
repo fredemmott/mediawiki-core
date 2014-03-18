@@ -24,6 +24,12 @@
  *
  * @ingroup Test
  *
+ * @licence GNU GPL v2+
+ * @author Jeroen De Dauw < jeroendedauw@gmail.com >
+ */
+require_once __DIR__ . "/ORMRowTest.php";
+
+/**
  * @group ORM
  *
  * The database group has as a side effect that temporal database tables are created. This makes
@@ -34,13 +40,6 @@
  * as non-functional. The reason why tests are aborted is assumed to be set up of temporal databases
  * that hold the first tests in a pending state awaiting access to the database.
  * @group medium
- *
- * @licence GNU GPL v2+
- * @author Jeroen De Dauw < jeroendedauw@gmail.com >
- */
-require_once __DIR__ . "/ORMRowTest.php";
-
-/**
  * @covers TestORMRow
  */
 class TestORMRowTest extends ORMRowTest {
